@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NGINX Load Balancer Demo</title>
+</head>
+<body>
+  <h1>Welcome to Frontend</h1>
+  <button onclick="fetchAPI()">Call Backend API</button>
+  <p id="response"></p>
+
+  <script>
+    async function fetchAPI() {
+      const res = await fetch('/api/');
+      const text = await res.text();
+      document.getElementById('response').innerText = text;
+    }
+  </script>
+</body>
+</html>
