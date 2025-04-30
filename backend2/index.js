@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 const port = 3002;
 
-app.get('/', (req, res) => {
-  res.send('🟢 Response from Backend Server 2');
+app.get('/api/', (req, res) => {
+  res.send('Response from Backend Server 2');
 });
 
 app.listen(port, '0.0.0.0', () => {
